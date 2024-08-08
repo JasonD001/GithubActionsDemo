@@ -1,23 +1,23 @@
 # example - 1
-# name: Hello World Workflow
-# 'on':
-#   - push
-# jobs:
-#   print_hello_world:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v3
-#       - name: Print Hello World
-#         run: 'echo "Hello, World!"'
-
-# example - 2
-name: hello-world
-'on': push
+name: Hello World Workflow
+'on':
+  - push
 jobs:
-  my-job:
+  print_hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Print Hello World
+        run: 'echo "Hello, World!"'
+
+# example - 2
+# name: hello-world
+# 'on': push
+# jobs:
+#   my-job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: my-step
+#         run: echo "Hello World!"
 
